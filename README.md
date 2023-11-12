@@ -7,26 +7,28 @@
 
 This is a simple Java GUI application for converting distances and temperatures between different units within the American system of measures. The program includes a graphical user interface (GUI) with buttons for distance conversion, temperature conversion, and program exit.
 
-How to Use
+## How to Use
 Distance Converter:
-
 Click the "Distance Converter" button.
 Input the distance in miles when prompted.
 Click "OK" to see the converted distance in kilometers.
-Temperature Converter:
 
+Temperature Converter:
 Click the "Temperature Converter" button.
 Input the temperature in Fahrenheit when prompted.
 Click "OK" to see the converted temperature in Celsius.
-Exit Program:
 
+Exit Program:
 Click the "Exit" button to terminate the program.
-Example Usage
+
+## Example Usage
+
 Distance Converter
 Click the "Distance Converter" button.
 Input the distance in miles when prompted.
 Click "OK."
 View the converted distance in kilometers in the displayed message dialog.
+
 Temperature Converter
 Click the "Temperature Converter" button.
 Input the temperature in Fahrenheit when prompted.
@@ -34,22 +36,25 @@ Click "OK."
 View the converted temperature in Celsius in the displayed message dialog.
 Exit Program
 Click the "Exit" button to terminate the program.
-Requirements
+
+## Requirements
 Java Runtime Environment (JRE)
-How to Run
+
+## How to Run
 Compile the GUIConverter.java file and run the generated class file. Ensure you have Java installed on your machine.
 
 bash
 Copy code
 javac GUIConverter.java
 java GUIConverter
-Screenshots
+
+## Screenshots
 Include screenshots of the GUI interface and conversion results if desired.
 
-Contributing
+## Contributing
 Contributions are welcome! Feel free to open an issue or submit a pull request.
 
-License
+## License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 Enjoy converting distances and temperatures with the American System of Measures Converter!
