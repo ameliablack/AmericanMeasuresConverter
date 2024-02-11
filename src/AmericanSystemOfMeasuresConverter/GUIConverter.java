@@ -20,22 +20,24 @@ import javax.swing.JPanel;
 public class GUIConverter {
     public GUIConverter(){
     // use JFrame and JPanel
-    JFrame frame =new JFrame("Converter");
+    JFrame frame = new JFrame("Converter");
     frame.setLayout(new FlowLayout());
     JPanel panel = new JPanel();
     
-    // GUI will have 3 buttons:"Distance Converter". "Temperature Converter", and "Exit"
+    // GUI will have 4 buttons:"Distance Converter", "Temperature Converter", "Weight Converter" and "Exit"
     JButton distance = new JButton("Distance Converter");
     JButton temp = new JButton("Temperature Converter");
+    JButton weight = new JButton("Weight Converter");
     JButton leave = new JButton("Exit");
     
     // once user clicks ok, message dialog will pop up
     panel.add(distance);
     panel.add(temp);
+    panel.add(weight);
     panel.add(leave);
     frame.add(panel);
     frame.setLayout(new FlowLayout());
-    frame.setSize(500,100);
+    frame.setSize(600,100);
     frame.setVisible(true);
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     
@@ -60,6 +62,17 @@ public class GUIConverter {
             TemperatureConverter obj = new TemperatureConverter(con);
             JOptionPane.showMessageDialog(frame,"Temperature in Celsius is " + obj.convert());
         }
+        });
+
+        // when user clicks on weight converter, an input dialog will pop up to input value followed by another pop up showing the result
+        weight.addActionListener(new ActionListener(){
+        @Override
+        public void actionPerformed(ActionEvent e){
+            String str = JOptionPane.showInputDialog("Enter Weight In Pounds: ");
+            Double pounds = Double.parseDouble(str);
+            WeightConverter obj = new WeightConverter(pounds);
+            JOptionPane.showMessageDialog(frame, "Weight in kilograms is " + obj.convert());
+        }    
         });
         
         
