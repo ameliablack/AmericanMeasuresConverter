@@ -64,7 +64,7 @@ public class GUIConverter {
         }
         });
 
-        // when user clicks on weight converter, an input dialog will pop up to input value
+        // when user clicks on weight converter, an input dialog will pop up to input value followed by another pop up showing the result
         weight.addActionListener(new ActionListener(){
         @Override
         public void actionPerformed(ActionEvent e){
